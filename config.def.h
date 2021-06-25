@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -84,15 +84,15 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_plus,                   0)
+	TAGKEYS(                        XK_ecaron,                 1)
+	TAGKEYS(                        XK_scaron,                 2)
+	TAGKEYS(                        XK_ccaron,                 3)
+	TAGKEYS(                        XK_rcaron,                 4)
+	TAGKEYS(                        XK_zcaron,                 5)
+	TAGKEYS(                        XK_yacute,                 6)
+	TAGKEYS(                        XK_aacute,                 7)
+	TAGKEYS(                        XK_iacute,                 8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
